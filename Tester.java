@@ -5,15 +5,14 @@ public class Tester{
         ArrayList<Plant> listPlants = new ArrayList<Plant>();
         Plant p1 = new Plant(5, 2, true);
         Plant p2 = new Plant(7, 5, false);
-        //System.out.println(p2.waterPlant());
         Plant p3 = new Plant(14, 2, true);
         Plant p4 = new Succulent(11,  4, true, 8);
         Succulent p5 = new Succulent(4, 8, false, 3);
         //Plant p6 = new Succulent(9, 9,  false, 9);
-        Plant p6 = new ChineseMoneyPlant(5, 2, true, 2, "green","black");
-        Plant p7 = new ChineseMoneyPlant(10, 10, false, 2, "yellow", "black");
+        ChineseMoneyPlant p6 = new ChineseMoneyPlant(5, 2, true, 2, "green","black");
+        ChineseMoneyPlant p7 = new ChineseMoneyPlant(10, 10, false, 2, "yellow", "black");
         Plant p8 = new ChineseMoneyPlant(6, 4, true, 1, "green", "red");
-        Plant p9 = new ChineseMoneyPlant(14, 8, true, 10, "yellow", "green");
+        ChineseMoneyPlant p9 = new ChineseMoneyPlant(14, 8, true, 10, "yellow", "green");
         Plant p10 = p6;
 
         listPlants.add(p1);
@@ -59,14 +58,34 @@ public class Tester{
         System.out.println("\t-" + p5.waterPlant());
         System.out.println("\t-" + p5.determineTurn());
         //p6 stats
-
+        System.out.println("\nPlant six:");
+        System.out.println("Info: " + p6);
+        System.out.println("\t-" + p6.determineSize());
+        System.out.println("\t-" + p6.waterPlant());
+        System.out.println("\t-" + p6.determineRot());
         //p7 stats
-
+        System.out.println("\nPlant seven:");
+        System.out.println("Info: " + p7);
+        System.out.println("\t-" + p7.determineSize());
+        System.out.println("\t-" + p7.waterPlant());
+        System.out.println("\t-" + p7.determineRot());
         //p8 stats
-
+        System.out.println("\nPlant eight:");
+        System.out.println("Info: " + p8);
+        System.out.println("\t-" + p8.determineSize());
+        System.out.println("\t-" + p8.waterPlant());
+        //System.out.println("\t-" + p8.determineRot());
         //p9 stats
-
+        System.out.println("\nPlant nine:");
+        System.out.println("Info: " + p9);
+        System.out.println("\t-" + p9.determineSize());
+        System.out.println("\t-" + p9.waterPlant());
+        System.out.println("\t-" + p9.determineRot());
         //p10 stats
-
+        System.out.println("\nPlant ten:");
+        System.out.println("Info: " + p10);
+        System.out.println("\t-" + p10.determineSize());
+        System.out.println("\t-" + p10.waterPlant());
+        //System.out.println("\t-" + p10.determineRot());
     }
 }

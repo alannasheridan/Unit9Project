@@ -13,8 +13,7 @@ class Succulent extends Plant {
     }
 
     public String toString(){
-        super.toString();
-        return ", Days since last turned:" + daysSinceTurned + "days";
+        return super.toString() + ", Days since last turned:" + daysSinceTurned + "days";
     }
     public String waterPlant(){
         

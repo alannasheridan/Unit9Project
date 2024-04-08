@@ -16,8 +16,7 @@ class ChineseMoneyPlant extends Succulent {
     }
 
     public String toString(){
-        super.toString();
-        return ", Leaf color:" + leafColor + ", Stem color:" + stemColor;
+        return super.toString() + ", Leaf color:" + leafColor + ", Stem color:" + stemColor;
     }
 
     public String waterPlant(){
