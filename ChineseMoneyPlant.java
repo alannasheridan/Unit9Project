@@ -4,14 +4,30 @@ class ChineseMoneyPlant extends Succulent {
     private String stemColor;
 
     public ChineseMoneyPlant(){
-        super(0, 0, true, 0);
+        super(0, 0, true, 0, false);
         leafColor = null;
         stemColor = null;
     }
     
-    public ChineseMoneyPlant(int h, int daysW, boolean dry, int daysT, String l, String  s){
-        super(h, daysW, dry, daysT);
+    public ChineseMoneyPlant(int h, int daysW, boolean dry, int daysT, boolean droop, String l, String  s){
+        super(h, daysW, dry, daysT, droop);
         leafColor = l;
+        stemColor = s;
+    }
+
+    public String getLeaf(){
+        return leafColor;
+    }
+
+    public String getStem(){
+        return stemColor;
+    }
+
+    public void setLeaf(String l){
+        leafColor = l;
+    }
+
+    public void seetStem(String s){
         stemColor = s;
     }
 
@@ -36,4 +52,11 @@ class ChineseMoneyPlant extends Succulent {
         }
         return "This chinese money plant seems healthy, but watch out for yellow leaves and black stems.";
     } 
+
+    public String pluckLeaves(){
+        if (leafColor.equalsIgnoreCase("yellow")){
+            return "There are some yellow, dying leaves on this plant, caefully pluck yellow leaves to avoid further spreading.";
+        }
+        return "There are no dying leaves, but if you see dying yellow ones carefully pluck them.";
+    }
 }

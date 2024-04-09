@@ -5,8 +5,8 @@ class Plant {
     protected boolean drySoil;
 
     public Plant(){
-        height = 0;
-        daysSinceWatered = 0;
+        height = 5;
+        daysSinceWatered = 7;
         drySoil = true;
     }
 
@@ -16,12 +16,28 @@ class Plant {
         drySoil = dry;
     }
 
-    public int getDays(){
+    public int getHeight(){
+        return height;
+    }
+    
+    public int getDaysW(){
         return daysSinceWatered;
     }
 
     public boolean getDry(){
         return drySoil;
+    }
+
+    public void setHeight(int h){
+        height = h;
+    }
+
+    public void setDaysW(int daysW){
+        daysSinceWatered = daysW;
+    }
+
+    public void setDry(boolean d){
+        drySoil = d;
     }
 
     public String toString(){
